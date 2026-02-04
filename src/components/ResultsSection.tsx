@@ -3,10 +3,10 @@ import confusionMatrix from "@/assets/confusion-matrix.jpg";
 import samplePredictions from "@/assets/sample-predictions.jpg";
 
 const metrics = [
-  { label: "Overall Accuracy", value: "95.8%", icon: Target, color: "text-green-500" },
-  { label: "Precision", value: "94.2%", icon: CheckCircle, color: "text-blue-500" },
-  { label: "Recall", value: "93.7%", icon: TrendingUp, color: "text-purple-500" },
-  { label: "Inference Time", value: "<50ms", icon: Zap, color: "text-orange-500" },
+  { label: "Overall Accuracy", value: "95.8%", icon: Target, color: "text-severity-success" },
+  { label: "Precision", value: "94.2%", icon: CheckCircle, color: "text-primary" },
+  { label: "Recall", value: "93.7%", icon: TrendingUp, color: "text-accent" },
+  { label: "Inference Time", value: "<50ms", icon: Zap, color: "text-severity-high" },
 ];
 
 const ResultsSection = () => {

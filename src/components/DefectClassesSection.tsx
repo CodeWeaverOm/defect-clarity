@@ -61,13 +61,13 @@ const defectClasses = [
 const getSeverityColor = (severity: string) => {
   switch (severity) {
     case "Critical":
-      return "bg-red-500/10 text-red-600 border-red-500/20";
+      return "bg-severity-critical/10 text-severity-critical border-severity-critical/20";
     case "High":
-      return "bg-orange-500/10 text-orange-600 border-orange-500/20";
+      return "bg-severity-high/10 text-severity-high border-severity-high/20";
     case "Medium":
-      return "bg-yellow-500/10 text-yellow-600 border-yellow-500/20";
+      return "bg-severity-medium/10 text-severity-medium border-severity-medium/20";
     default:
-      return "bg-green-500/10 text-green-600 border-green-500/20";
+      return "bg-severity-success/10 text-severity-success border-severity-success/20";
   }
 };
 
@@ -101,7 +101,7 @@ const DefectClassesSection = () => {
                   alt={`${defect.name} defect sample`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
                 <span
                   className={`absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-medium border ${getSeverityColor(
                     defect.severity

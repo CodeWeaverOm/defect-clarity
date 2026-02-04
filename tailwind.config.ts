@@ -54,9 +54,22 @@ export default {
           dark: "hsl(var(--slate-dark))",
           medium: "hsl(var(--slate-medium))",
           light: "hsl(var(--slate-light))",
+          900: "hsl(var(--slate-900))",
+          800: "hsl(var(--slate-800))",
+          700: "hsl(var(--slate-700))",
+          500: "hsl(var(--slate-500))",
+          400: "hsl(var(--slate-400))",
+          300: "hsl(var(--slate-300))",
+          100: "hsl(var(--slate-100))",
         },
         cyan: {
           accent: "hsl(var(--cyan-accent))",
+        },
+        severity: {
+          critical: "hsl(var(--severity-critical))",
+          high: "hsl(var(--severity-high))",
+          medium: "hsl(var(--severity-medium))",
+          success: "hsl(var(--severity-success))",
         },
       },
       borderRadius: {

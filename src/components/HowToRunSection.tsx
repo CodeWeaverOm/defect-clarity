@@ -38,7 +38,7 @@ const HowToRunSection = () => {
   };
 
   return (
-    <section id="run" className="py-24 bg-slate-dark text-white">
+    <section id="run" className="py-24 bg-slate-dark text-primary-foreground">
       <div className="section-container">
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
@@ -76,7 +76,7 @@ const HowToRunSection = () => {
                   aria-label="Copy code"
                 >
                   {copiedIndex === index ? (
-                    <Check className="w-4 h-4 text-green-400" />
+                    <Check className="w-4 h-4 text-severity-success" />
                   ) : (
                     <Copy className="w-4 h-4 text-slate-400" />
                   )}
@@ -88,7 +88,7 @@ const HowToRunSection = () => {
 
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-sm text-slate-300">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-severity-success animate-pulse" />
             Full documentation available in the GitHub repository
           </div>
         </div>

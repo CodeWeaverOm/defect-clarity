@@ -8,7 +8,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-dark text-white py-12">
+    <footer className="bg-slate-dark text-primary-foreground py-12">
       <div className="section-container">
         <div className="flex flex-col items-center text-center">
           {/* Logo / Title */}
@@ -30,18 +30,18 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-slate-800 hover:bg-primary transition-colors flex items-center justify-center group"
                 aria-label={social.label}
               >
-                <social.icon className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+                <social.icon className="w-5 h-5 text-slate-400 group-hover:text-primary-foreground transition-colors" />
               </a>
             ))}
           </div>
 
           {/* Navigation */}
           <nav className="flex flex-wrap justify-center gap-6 text-sm text-slate-400 mb-8">
-            <a href="#about" className="hover:text-white transition-colors">About</a>
-            <a href="#defects" className="hover:text-white transition-colors">Defect Classes</a>
-            <a href="#architecture" className="hover:text-white transition-colors">Architecture</a>
-            <a href="#results" className="hover:text-white transition-colors">Results</a>
-            <a href="#docs" className="hover:text-white transition-colors">Documentation</a>
+            <a href="#about" className="hover:text-primary-foreground transition-colors">About</a>
+            <a href="#defects" className="hover:text-primary-foreground transition-colors">Defect Classes</a>
+            <a href="#architecture" className="hover:text-primary-foreground transition-colors">Architecture</a>
+            <a href="#results" className="hover:text-primary-foreground transition-colors">Results</a>
+            <a href="#docs" className="hover:text-primary-foreground transition-colors">Documentation</a>
           </nav>
 
           {/* Divider */}
@@ -49,9 +49,9 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-slate-500 flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-red-500" /> using PyTorch & React
+            Made with <Heart className="w-4 h-4 text-severity-critical" /> using PyTorch & React
           </p>
-          <p className="text-xs text-slate-600 mt-2">
+          <p className="text-xs text-slate-500 mt-2">
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

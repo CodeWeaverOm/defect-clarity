@@ -49,7 +49,7 @@ const ArchitectureSection = () => {
                 <span><strong>Backbone:</strong> ResNet-50 with pretrained ImageNet weights</span>
               </div>
               <div className="flex items-center gap-3 p-3 bg-secondary/50 rounded-lg">
-                <div className="w-2 h-2 rounded-full bg-green-500" />
+                <div className="w-2 h-2 rounded-full bg-severity-success" />
                 <span><strong>Output:</strong> 8-class softmax classification</span>
               </div>
             </div>
@@ -69,7 +69,7 @@ const ArchitectureSection = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                    <tech.icon className="w-5 h-5 text-white" />
+                    <tech.icon className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
                     <h4 className="font-medium text-foreground">{tech.name}</h4>
