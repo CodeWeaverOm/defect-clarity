@@ -46,7 +46,7 @@ const HeroSection = () => {
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl">
               A state-of-the-art deep learning solution for real-time wafer defect classification, 
               achieving 95%+ accuracy in identifying critical manufacturing anomalies using 
-               CNN architectures.
+              CNN architectures.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
