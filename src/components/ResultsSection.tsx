@@ -1,6 +1,4 @@
 import { TrendingUp, Target, Zap, CheckCircle } from "lucide-react";
-import confusionMatrix from "@/assets/confusion-matrix.jpg";
-import samplePredictions from "@/assets/sample-predictions.jpg";
 
 const metrics = [
   { label: "Overall Accuracy", value: "95.8%", icon: Target, color: "text-severity-success" },
@@ -43,39 +41,8 @@ const ResultsSection = () => {
           ))}
         </div>
 
-        {/* Visual Results */}
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Confusion Matrix */}
-          <div className="glass-card p-6 hover-lift">
-            <h3 className="font-semibold text-lg mb-4">Confusion Matrix</h3>
-            <img
-              src={confusionMatrix}
-              alt="Model confusion matrix showing classification performance"
-              className="w-full h-auto rounded-lg"
-            />
-            <p className="text-sm text-muted-foreground mt-4">
-              The confusion matrix shows strong diagonal values, indicating high 
-              accuracy across all defect classes with minimal misclassification.
-            </p>
-          </div>
-
-          {/* Sample Predictions */}
-          <div className="glass-card p-6 hover-lift">
-            <h3 className="font-semibold text-lg mb-4">Sample Predictions</h3>
-            <img
-              src={samplePredictions}
-              alt="Sample wafer images with model predictions"
-              className="w-full h-auto rounded-lg"
-            />
-            <p className="text-sm text-muted-foreground mt-4">
-              Real-world test samples showing accurate defect identification 
-              with confidence scores above 90% for most predictions.
-            </p>
-          </div>
-        </div>
-
         {/* Additional Stats */}
-        <div className="mt-12 glass-card p-8">
+        <div className="glass-card p-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold gradient-text mb-2">12,000+</div>
