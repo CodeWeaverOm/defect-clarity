@@ -129,7 +129,9 @@
   }
 
   .code-block {
-    @apply bg-slate-900 text-slate-100 rounded-lg p-6 font-mono text-sm overflow-x-auto;
+    @apply rounded-lg p-6 font-mono text-sm overflow-x-auto;
+    background-color: hsl(var(--slate-900));
+    color: hsl(var(--slate-100));
   }
 
   .tech-badge {
