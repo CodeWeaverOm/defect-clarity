@@ -42,30 +42,26 @@ const DeveloperSection = () => {
               {/* Info */}
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  John Doe
+                  Om Nimmalwar
                 </h3>
                 
                 <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-muted-foreground mb-4">
                   <span className="flex items-center gap-1">
                     <GraduationCap className="w-4 h-4" />
-                    M.S. Computer Engineering
+                    Masters of Computer Application
                   </span>
                   <span className="flex items-center gap-1">
                     <Briefcase className="w-4 h-4" />
-                    AI/ML Engineer
+                    Data Scientist
                   </span>
                   <span className="flex items-center gap-1">
                     <MapPin className="w-4 h-4" />
-                    San Francisco, CA
+                    Chinchwad, Pune
                   </span>
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Passionate AI/ML engineer specializing in computer vision and deep learning 
-                  applications for industrial automation. With a strong background in 
-                  semiconductor manufacturing processes and quality control systems, I develop 
-                  intelligent solutions that bridge the gap between cutting-edge research 
-                  and practical industry applications.
+                  Passionate Data Scientist and Developer, currently pursuing MCA at Pratibha Institute of Business Management, with a strong focus on Computer Vision and Deep Learning. I specialize in designing and developing intelligent, data-driven applications that transform complex data into actionable insights.
                 </p>
 
                 {/* Skills */}

@@ -59,12 +59,12 @@ const AboutSection = () => {
             
             {/* Floating stats */}
             <div className="absolute -bottom-6 -left-6 glass-card p-4 animate-float">
-              <div className="text-3xl font-bold gradient-text">95%+</div>
+              <div className="text-3xl font-bold gradient-text">85%+</div>
               <div className="text-sm text-muted-foreground">Accuracy Rate</div>
             </div>
             
             <div className="absolute -top-6 -right-6 glass-card p-4 animate-float" style={{ animationDelay: "1s" }}>
-              <div className="text-3xl font-bold gradient-text">8</div>
+              <div className="text-3xl font-bold gradient-text">9</div>
               <div className="text-sm text-muted-foreground">Defect Classes</div>
             </div>
           </div>

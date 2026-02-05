@@ -45,15 +45,15 @@ const ResultsSection = () => {
         <div className="glass-card p-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold gradient-text mb-2">12,000+</div>
+              <div className="text-4xl font-bold gradient-text mb-2">4500+</div>
               <div className="text-muted-foreground">Training Images</div>
             </div>
             <div>
-              <div className="text-4xl font-bold gradient-text mb-2">50</div>
+              <div className="text-4xl font-bold gradient-text mb-2">15</div>
               <div className="text-muted-foreground">Training Epochs</div>
             </div>
             <div>
-              <div className="text-4xl font-bold gradient-text mb-2">2.5h</div>
+              <div className="text-4xl font-bold gradient-text mb-2">45min</div>
               <div className="text-muted-foreground">Training Time (GPU)</div>
             </div>
           </div>

@@ -5,30 +5,37 @@ import defectForeign from "@/assets/defect-foreign.jpg";
 import defectLER from "@/assets/defect-ler.jpg";
 import defectLinear from "@/assets/defect-linear.jpg";
 import defectZAxis from "@/assets/defect-zaxis.jpg";
-import defectClean from "@/assets/defect-clean.jpg";
+import defectComplex from "@/assets/defect-complex.jpg";
+import defectFlat from "@/assets/defect-flat.jpg"
 
 const defectClasses = [
   {
     name: "Cracks",
-    description: "Structural fractures in wafer surface",
+    description: "Structural fractures on the wafer surface that can compromise integrity",
     image: defectCracks,
     severity: "Critical",
   },
   {
     name: "Scratches",
-    description: "Surface abrasion marks from handling",
+    description: "Fine abrasion marks caused by handling or equipment contact",
     image: defectScratches,
     severity: "High",
   },
   {
+    name: "Flat",
+    description: "Surface irregularities or flat zones resulting from mechanical abrasion",
+    image: defectFlat,
+    severity: "High",
+  },
+  {
     name: "Bridge",
-    description: "Unintended connections between circuits",
+    description: "Unintended circuit connections leading to electrical shorting",
     image: defectBridge,
     severity: "Critical",
   },
   {
     name: "Foreign Material",
-    description: "Particle contamination on surface",
+    description: "Particle contamination or debris deposited on the wafer",
     image: defectForeign,
     severity: "High",
   },
@@ -40,21 +47,21 @@ const defectClasses = [
   },
   {
     name: "Linear",
-    description: "Linear pattern anomalies",
+    description: "Irregular or jagged edges along patterned lines",
     image: defectLinear,
     severity: "Medium",
   },
   {
     name: "Z-Axis",
-    description: "Depth-related surface variations",
+    description: "Depth-related surface deviations affecting topography",
     image: defectZAxis,
     severity: "High",
   },
   {
-    name: "Clean",
-    description: "No defects detected - reference class",
-    image: defectClean,
-    severity: "None",
+    name: "Complex",
+    description: "Complex Minor Defects",
+    image: defectComplex,
+    severity: "High",
   },
 ];
 

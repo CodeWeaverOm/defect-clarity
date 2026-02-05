@@ -4,27 +4,23 @@ import { useState } from "react";
 const codeSteps = [
   {
     title: "Clone the Repository",
-    command: "git clone https://github.com/username/semiconductor-defect-detection.git\ncd semiconductor-defect-detection",
+    command: "https://github.com/CodeWeaverOm/WaferVision-AI.git\ncd WaferVision-AI",
   },
   {
     title: "Create Virtual Environment",
-    command: "python -m venv venv\nsource venv/bin/activate  # On Windows: venv\\Scripts\\activate",
+    command: "pip install venv\npython -m venv venv\nsource venv/bin/activate  # On Windows: venv\\Scripts\\activate",
   },
   {
     title: "Install Dependencies",
     command: "pip install -r requirements.txt",
   },
   {
-    title: "Download Dataset",
-    command: "python scripts/download_dataset.py",
-  },
-  {
     title: "Train the Model",
-    command: "python train.py --epochs 50 --batch-size 32 --lr 0.001",
+    command: "python train.py",
   },
   {
-    title: "Run Inference",
-    command: "python predict.py --image path/to/wafer_image.png --model checkpoints/best_model.pth",
+    title: "Test The Model By Inputing Images In Test Folder",
+    command: "python test.py",
   },
 ];
 

@@ -1,9 +1,9 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Mail, href: "#", label: "Email" },
+  { icon: Github, href: "https://github.com/CodeWeaverOm/WaferVision-AI", label: "GitHub" },
+  { icon: Linkedin, href: "www.linkedin.com/in/omnimmalwar", label: "LinkedIn" },
+  { icon: Mail, href: "omnimmalwar32@gmail.com", label: "Email" },
 ];
 
 const Footer = () => {

@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import developerPhoto from "@/assets/developer-photo.jpg";
 
 const HeroSection = () => {
+  // Define your links here for easy management
+  const SOCIAL_LINKS = {
+    github: "https://github.com/your-username/your-repo-name",
+    docs: "#docs", // Or a link to a PDF/Wiki
+    email: "mailto:om.nimmalwar@email.com" // Replace with your actual email
+  };
+
   return (
     <section className="min-h-screen bg-gradient-hero flex items-center relative overflow-hidden">
       {/* Background decoration */}
@@ -20,11 +27,10 @@ const HeroSection = () => {
               <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-card shadow-card-hover animate-pulse-glow">
                 <img
                   src={developerPhoto}
-                  alt="Developer"
+                  alt="Om Nimmalwar"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative ring */}
               <div className="absolute inset-0 rounded-full border-2 border-primary/20 scale-110" />
               <div className="absolute inset-0 rounded-full border border-accent/10 scale-125" />
             </div>
@@ -44,24 +50,35 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl">
-              A state-of-the-art deep learning solution for real-time wafer defect classification, 
-              achieving 95%+ accuracy in identifying critical manufacturing anomalies using 
-              CNN architectures.
+              I am Om Nimmalwar, an MCA student at PIBM. I developed this state-of-the-art 
+              deep learning solution for real-time wafer defect classification, 
+              achieving 85%+ accuracy using advanced CNN architectures.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="gap-2 bg-gradient-primary hover:opacity-90 transition-opacity">
-                <Github className="w-5 h-5" />
-                View on GitHub
-              </Button>
-              <Button size="lg" variant="outline" className="gap-2">
-                <FileText className="w-5 h-5" />
-                Documentation
-              </Button>
-              <Button size="lg" variant="ghost" className="gap-2">
-                <Mail className="w-5 h-5" />
-                Contact
-              </Button>
+              {/* GitHub Link */}
+              <a href="https://github.com/CodeWeaverOm/WaferVision-AI" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="gap-2 bg-gradient-primary hover:opacity-90 transition-opacity">
+                  <Github className="w-5 h-5" />
+                  View on GitHub
+                </Button>
+              </a>
+
+              {/* Documentation Link */}
+              <a href="#docs">
+                <Button size="lg" variant="outline" className="gap-2">
+                  <FileText className="w-5 h-5" />
+                  Documentation
+                </Button>
+              </a>
+
+              {/* Email/Contact Link */}
+              <a href="omnimmalwar32@gmail.com">
+                <Button size="lg" variant="ghost" className="gap-2">
+                  <Mail className="w-5 h-5" />
+                  Contact
+                </Button>
+              </a>
             </div>
 
             {/* Tech badges */}

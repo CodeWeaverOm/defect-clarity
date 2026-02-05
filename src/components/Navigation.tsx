@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Cpu } from "lucide-react";
+import { Menu, X } from "lucide-react"; // Removed Cpu since we are using your logo
 import { Button } from "@/components/ui/button";
+// 1. Import your logo
+import logoImg from "@/assets/Logo.jpg"; 
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -33,10 +35,14 @@ const Navigation = () => {
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo Section Updated */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <Cpu className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 overflow-hidden rounded-lg border border-border bg-white flex items-center justify-center">
+              <img 
+                src={logoImg} 
+                alt="SemiDefect Logo" 
+                className="w-full h-full object-cover" 
+              />
             </div>
             <span className="font-bold text-foreground hidden sm:inline">
               SemiDefect
@@ -69,11 +75,7 @@ const Navigation = () => {
             className="md:hidden p-2 rounded-lg hover:bg-secondary"
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="w-5 h-5" />
-            ) : (
-              <Menu className="w-5 h-5" />
-            )}
+            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
